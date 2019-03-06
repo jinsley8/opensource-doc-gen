@@ -1,9 +1,8 @@
 
 # Quantstamp Open Source Document Generation
 
-
 ## Prerequisite
-* Install [Markdown-pp](https://github.com/jreese/markdown-pp#installationandusage) in your local machine.
+* Install [Markdown-pp](https://github.com/jreese/markdown-pp#installationandusage) in your local machine. (`pip install MarkdownPP`)
 * Make sure you can run curl.
 
 ## Create a Contribute template in your local repository
@@ -13,7 +12,7 @@ In your local repository, create a template `Contribute.mdTemplate`
 ### Contribute.mdTemplate reference 
 
 ```
-#Contributing
+# Contributing
 !INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/ContribHeader.md"
 
 ## Bug Report
