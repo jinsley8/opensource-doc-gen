@@ -2,25 +2,38 @@
 # Quantstamp Open Source Document Generation
 
 
-## Installation
-1. Clone the repo
-2. In the directory, run: `npm install gulp` and `npm install gitdown`
+## Prerequisite
+* Install [Markdown-pp](https://github.com/jreese/markdown-pp#installationandusage)
+* Make sure you can rune curl.
 
-## Usage
-Run `gulp repoName` in the repo Folder to generate files in the folder `Export`. 
-For example, to generate `Contribute.md` for `usolc` simply type `gulp usolc`.
+## Makerfile reference
 
-## Adding a new Repo config
-1. Create a `reponame.js` in the folder `configs`, and fill all the variables required by the template. 
-
-2. Modify `gulpfile.js`, create a function that would read config from the created file and export the function in gulp. Example:
-
-```javascript
-function usolc(cb){
-    getRepoConfig('usolc');
-    WriteConfig();
-    cb();
-}
-
-exports.usolc = usolc
 ```
+docs:
+	markdown-pp Contribute.mdTemplate -o ./Contribute.md
+	rm -rf .github
+	mkdir .github
+	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug-report.md -o .github/bug-report.md
+	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md -o .github/pull_request_template.md
+
+```
+
+## Contribute.mdTemplate reference 
+
+```
+#Contributing
+!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/ContribHeader.md"
+
+## Bug Report
+!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/BugReport.md"
+
+## Feature suggestion
+!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/FeatureSuggestion.md"
+
+## Pull Request Guideline
+!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/PullRequest.md"
+
+## Code of Conduct
+!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/CodeOfConduct.md"
+```
+
