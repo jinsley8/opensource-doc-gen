@@ -24,8 +24,6 @@ In your local repository, create a template `Contribute.mdTemplate`
 ## Pull Request Guideline
 !INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/PullRequest.md"
 
-## Code of Conduct
-!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/CodeOfConduct.md"
 ```
 
 ## Modify your Makerfile
@@ -40,7 +38,7 @@ docs:
 	mkdir -p .github
 	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug-report.md > .github/bug-report.md
 	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md > .github/pull_request_template.md
-	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/CodeOfConduct.md > .github/CODE_OF_CONDUCT.md
+	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/CodeOfConduct.md > .github/CODE_OF_CONDUCT.md
 
 ```
 
