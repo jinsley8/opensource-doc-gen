@@ -1,5 +1,5 @@
 
-[Guidelines for github contribution](https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request)
+[Guidelines for github contribution](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 
 To make a pull request:
 1. Ensure that all tests have passed.
