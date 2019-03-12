@@ -7,6 +7,6 @@ To make a pull request:
 2. Follow the coding guidelines using `.editorconfig` in the repository
 3. Update the documents accordingly to describe the interface and feature change
 
-We will review the pull requests on a regular basis and 
+We will review the pull requests when we have availability and 
 will give you feedback based on your changes. We expect responses of the feedback within 2 weeks.
 After 2 weeks, we may close the pull request due to inactivity.
