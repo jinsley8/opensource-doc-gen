@@ -11,7 +11,7 @@ please follow the steps that will certainly help us and will also help you solve
 
 
 Once you're certain that you should submit the bug, 
-we highly recommend filing an issue through github to get a timely response. 
+we highly recommend filing an issue through Github to get a timely response. 
 
 To submit an issue, please include the following information in your post:
 1. What is the version that you are using?
