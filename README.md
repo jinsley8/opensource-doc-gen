@@ -9,22 +9,15 @@
 
 In your local repository, create a template `Contribute.mdTemplate`
 
-### Contribute.mdTemplate reference 
+### Template reference 
 
-```
-# Contributing
-!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/ContribHeader.md"
+All the full templates for local repositories are located in github_template/xxx.md/xxx.mdTemplate.
 
-## Bug Report
-!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/BugReport.md"
 
-## Feature suggestion
-!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/FeatureSuggestion.md"
-
-## Pull Request Guideline
-!INCLUDEURL "https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/PullRequest.md"
-
-```
+For convenience, here are the list of the full templates.
+* [Contribute.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/Contribute.mdTemplate) 
+* [bug-report.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug-report.md/bug-report.mdTemplate)
+* [pull_request_template.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md/pull_request_template.mdTemplate)
 
 ## Modify your Makerfile
 
@@ -36,8 +29,8 @@ Add a section so that the documents will be generated and pulled from this publi
 docs:
 	markdown-pp Contribute.mdTemplate -o ./Contribute.md
 	mkdir -p .github
-	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug-report.md > .github/bug-report.md
-	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md > .github/pull_request_template.md
+    markdown-pp bug-report.mdTemplate -o ./.github/bug-report.md
+    markdown-pp pull_request_template.mdTemplate -o ./.github/pull_request_template.md
 	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/CodeOfConduct.md > .github/CODE_OF_CONDUCT.md
 
 ```
