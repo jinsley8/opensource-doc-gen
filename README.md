@@ -23,14 +23,14 @@ For convenience, here are the list of the full templates.
 
 Add a section so that the documents will be generated and pulled from this public repository using the command `make docs`.
 
-### Makerfile reference
+### Makefile reference
 
 ```
 docs:
 	markdown-pp Contribute.mdTemplate -o ./Contribute.md
 	mkdir -p .github
-    markdown-pp bug-report.mdTemplate -o ./.github/bug-report.md
-    markdown-pp pull_request_template.mdTemplate -o ./.github/pull_request_template.md
+	markdown-pp bug-report.mdTemplate -o ./.github/bug-report.md
+	markdown-pp pull_request_template.mdTemplate -o ./.github/pull_request_template.md
 	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/CodeOfConduct.md > .github/CODE_OF_CONDUCT.md
 
 ```
