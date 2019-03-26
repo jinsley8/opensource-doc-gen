@@ -4,7 +4,7 @@
 To make a pull request:
 1. Ensure that all tests have passed.
 2. Write new tests that cover the new codes.
-2. Follow the coding guidelines using `.editorconfig` in the repository
+2. Follow the coding guidelines.
 3. Update the documents accordingly to describe the interface and feature change
 
 We will review the pull requests when we have availability and 
