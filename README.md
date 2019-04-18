@@ -28,7 +28,6 @@ Add a section so that the documents will be generated and pulled from this publi
 ```
 docs:
 	markdown-pp CONTRIBUTE.mdTemplate -o ./CONTRIBUTE.md
-	mkdir -p .github
 	mkdir -p .github/ISSUE_TEMPLATE
 	markdown-pp bug_report.mdTemplate -o ./.github/ISSUE_TEMPLATE/bug_report.md
 	markdown-pp pull_request_template.mdTemplate -o ./.github/pull_request_template.md
