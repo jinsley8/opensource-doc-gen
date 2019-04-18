@@ -15,8 +15,8 @@ All the full templates for local repositories are located in github_template/xxx
 
 
 For convenience, here are the list of the full templates.
-* [Contribute.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/CONTRIBUTE.md/CONTRIBUTE.mdTemplate) 
-* [bug-report.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug_report.md/bug_report.mdTemplate)
+* [CONTRIBUTE.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/CONTRIBUTE.md/CONTRIBUTE.mdTemplate) 
+* [bug_report.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug_report.md/bug_report.mdTemplate)
 * [pull_request_template.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md/pull_request_template.mdTemplate)
 
 ## Modify your Makerfile
