@@ -15,8 +15,8 @@ All the full templates for local repositories are located in github_template/xxx
 
 
 For convenience, here are the list of the full templates.
-* [Contribute.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/Contribute.md/Contribute.mdTemplate) 
-* [bug-report.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug-report.md/bug-report.mdTemplate)
+* [Contribute.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/CONTRIBUTE.md/CONTRIBUTE.mdTemplate) 
+* [bug-report.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug_report.md/bug_report.mdTemplate)
 * [pull_request_template.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md/pull_request_template.mdTemplate)
 
 ## Modify your Makerfile
@@ -27,13 +27,13 @@ Add a section so that the documents will be generated and pulled from this publi
 
 ```
 docs:
-	markdown-pp Contribute.mdTemplate -o ./Contribute.md
+	markdown-pp CONTRIBUTE.mdTemplate -o ./CONTRIBUTE.md
 	mkdir -p .github
 	mkdir -p .github/ISSUE_TEMPLATE
-	markdown-pp bug-report.mdTemplate -o ./.github/ISSUE_TEMPLATE/bug-report.md
+	markdown-pp bug_report.mdTemplate -o ./.github/ISSUE_TEMPLATE/bug_report.md
 	markdown-pp pull_request_template.mdTemplate -o ./.github/pull_request_template.md
-	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/CodeOfConduct.md > .github/CODE_OF_CONDUCT.md
-	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/feature-request.md > .github/ISSUE_TEMPLATE/feature_request.md
+	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/CODE_OF_CONDUCT.md > .github/CODE_OF_CONDUCT.md
+	curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/feature_request.md > .github/ISSUE_TEMPLATE/feature_request.md
 ```
 
 
