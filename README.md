@@ -19,6 +19,14 @@ For convenience, here are the list of the full templates.
 * [bug_report.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug_report.md/bug_report.mdTemplate)
 * [pull_request_template.mdTemplate](https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md/pull_request_template.mdTemplate)
 
+
+```
+curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/CONTRIBUTE.md/CONTRIBUTE.mdTemplate > CONTRIBUTE.mdTemplate
+curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/bug_report.md/bug_report.mdTemplate > bug_report.mdTemplate
+curl https://raw.githubusercontent.com/quantstamp/opensource-doc-gen/master/github_template/pull_request_template.md/pull_request_template.mdTemplate > pull_request_template.mdTemplate
+```
+
+
 ## Modify your Makerfile
 
 Add a section so that the documents will be generated and pulled from this public repository using the command `make docs`.
